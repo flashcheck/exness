@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Exnessdt | Trusted USDT to INR Conversion Platform
+</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9; padding-bottom: 100px;	
+        }
+
+        .container-box {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .form-label {
+            font-weight: 600;
+        }
+
+        .exchange-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        .card .bx {
+            font-size: 1.5rem;
+        }
+
+        .btn-exchange {
+            background: linear-gradient(to right, #E07E09, #ffd800);
+            color: white;
+        }
+
+            .btn-exchange:hover {
+                border: 1px solid #E07E09;
+            }.bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 500px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+            .bottom-nav i {
+                font-size: 22px;
+            }
+
+            .bottom-nav span {
+                display: block;
+                font-size: 12px;
+            }
+    </style>
+</head>
+<body>
+    <form method="post" action="./exchange.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODA2MTIwNTkyD2QWAgIDD2QWBgIBDxYCHgRUZXh0BQQwLjAwZAIDDw8WAh8ABQYxMDIuMDBkZAIGDxYCHgtfIUl0ZW1Db3VudAIDFgZmD2QWAmYPFQUHQmluYW5jZQdCaW5hbmNlCGhoOm1tIHR0BDgzLjEEODMuMWQCAQ9kFgJmDxUFCEV4bmVzc2R0CEV4bmVzc2R0CGhoOm1tIHR0AzEwMgMxMDJkAgIPZBYCZg8VBQZXYXppcngGV2F6aXJ4CGhoOm1tIHR0BTgyLjI1BTgyLjI1ZGQsjQBtQoLDEoJGGsPTphbSHcymyrJUtYEd+kjKuuwvgQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1BE11E85" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARmHKo8qOMA06T6cN7eof4Y0glT7uWt9W1Zsex797Upl20g017sNwqUKgRXUOSDWl9q95lnmOZ4BaELuXwslBxJ+tlzdeFxHsSV//e4z7uHwAlCdaX4AuKHrPFtxEvXu6Y=" />
+</div>
+        <div class="container-box">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                <a href="dashboard.aspx" class="text-dark text-decoration-none">
+                    <i class='bx bx-arrow-back fs-4'></i>
+                </a>
+                <h5 class="fw-bold m-0 text-center flex-grow-1">Flash Exchange</h5>
+                <a href="exchange-summary.aspx" class="text-dark text-decoration-none">
+                    <i class='bx bx-list-ul fs-4'></i>
+                </a>
+            </div>
+            
+            <!-- Exchange Card -->
+            <div class="exchange-card">
+                <!-- USDT Row -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <label class="form-label mb-1">USDT</label>
+                        <small class="text-muted">Available:
+                            0.00
+                            USDT</small>
+                    </div>
+                    <input name="txtUsdtAmount" type="text" id="txtUsdtAmount" class="form-control" placeholder="Enter USDT amount" />
+                </div>
+
+                <!-- Exchange Icon -->
+                <div class="text-center mb-3">
+                    <i class='bx bx-transfer fs-3 text-warning'></i>
+                </div>
+
+                <!-- INR Row -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <label class="form-label mb-1">INR</label>
+                        <small class="text-muted">1 USDT = ₹<span id="litCurrentRate">102.00</span></small>
+                    </div>
+                    <input name="txtInrAmount" type="text" readonly="readonly" id="txtInrAmount" class="form-control" placeholder="Converted INR amount" />
+                </div>
+
+                <!-- Sell Button -->
+                <input type="button" name="btnSellUsdt" value="Sell USDT" onclick="this.disabled=true;this.value=&#39;Submitting...&#39;;__doPostBack(&#39;btnSellUsdt&#39;,&#39;&#39;)" id="btnSellUsdt" class="btn btn-exchange w-100" />
+            </div>
+
+            <!-- Price Cards -->
+            <!-- Binance -->
+            
+                    <div class="card mb-3 shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/Binance.png" style="height:40px;" class="me-2"/>
+                            <h6 class="mb-0">Binance</h6>
+                        </div>
+                        <small class="text-muted">Updated:
+                            hh:mm tt</small>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Avg Price: ₹83.1</span>
+                        <strong>1 USDT = ₹83.1</strong>
+                    </div>
+                </div>
+            </div>
+                
+                    <div class="card mb-3 shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/Exnessdt.png" style="height:40px;" class="me-2"/>
+                            <h6 class="mb-0">Exnessdt</h6>
+                        </div>
+                        <small class="text-muted">Updated:
+                            hh:mm tt</small>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Avg Price: ₹102</span>
+                        <strong>1 USDT = ₹102</strong>
+                    </div>
+                </div>
+            </div>
+                
+                    <div class="card mb-3 shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/Wazirx.png" style="height:40px;" class="me-2"/>
+                            <h6 class="mb-0">Wazirx</h6>
+                        </div>
+                        <small class="text-muted">Updated:
+                            hh:mm tt</small>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Avg Price: ₹82.25</span>
+                        <strong>1 USDT = ₹82.25</strong>
+                    </div>
+                </div>
+            </div>
+                
+           
+
+        </div>
+        <a href="https://wa.me/15819000136?text=Hello%20Exnessdt%2C%20I%20need%20some%20help%20with%20my%20trading%20platform.%20Can%20you%20assist%20me%3F" style="background-color:#58c139;color:white;padding: 15px 17px;display: block;position: fixed;z-index: 999999;border-radius: 50px;right: 25px;bottom: 100px;"><i class="bx bxl-whatsapp" style="font-size:40px;"></i></a>
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="dashboard.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bxs-dashboard'></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="market.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-bar-chart'></i>
+                <span>Market</span>
+            </a>
+            <a href="exchange.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-transfer'></i>
+                <span>Exchange</span>
+            </a>
+            <a href="setting.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-menu'></i>
+                <span>Menu</span>
+            </a>
+        </div>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                const usdtInput = document.getElementById('txtUsdtAmount');
+          const inrInput = document.getElementById('txtInrAmount');
+            const rateLiteral = document.getElementById('litCurrentRate');
+            const inrLabel = rateLiteral ?.closest("div") ?.querySelector("small");
+
+            if (!rateLiteral) {
+                console.warn("litCurrentRate element not found in DOM.");
+                return;
+            }
+
+            function updateInrValue() {
+                const usdt = parseFloat(usdtInput.value);
+                let rate = parseFloat(rateLiteral.textContent || rateLiteral.innerText);
+
+                if (!isNaN(usdt) && !isNaN(rate)) {
+                    let displayRate = rate;
+                    let vipPrefix = "";
+
+                    if (usdt >= 3001) {
+                        displayRate += 2;
+                        vipPrefix = "<span style='color:red;font-weight:bold;'>Platinum Level </span>";
+                    }
+                    else if (usdt >= 1001) {
+                        displayRate += 1;
+                        vipPrefix = "<span style='color:red;font-weight:bold;'>Diamond Level </span>";
+                    }
+                    else
+                        vipPrefix = "<span style='color:red;font-weight:bold;'>Gold Level </span>";
+
+                    inrInput.value = (usdt * displayRate).toFixed(2);
+
+                    // Update the label display dynamically
+                    if (inrLabel) {
+                        inrLabel.innerHTML = `${vipPrefix}1 USDT = ₹${displayRate.toFixed(2)}`;
+                    }
+                } else {
+                    inrInput.value = "";
+                    if (inrLabel) {
+                        inrLabel.innerHTML = `1 USDT = ₹${rateLiteral.innerText}`;
+                    }
+                }
+            }
+
+            usdtInput.addEventListener("input", updateInrValue);
+            });
+        </script>
+
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </form>
+</body>
+</html>
