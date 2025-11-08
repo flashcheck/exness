@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><title>
+	Exnessdt | Trusted USDT to INR Conversion Platform
+</title><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #f9f9f9;
+            font-family: 'Segoe UI', sans-serif;padding-bottom: 100px;	
+        }
+
+        .container-box {
+            max-width: 500px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .market-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .market-card img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .crypto-name {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .change.positive {
+            color: green;
+        }
+
+        .change.negative {
+            color: red;
+        }.bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 500px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+            .bottom-nav i {
+                font-size: 22px;
+            }
+
+            .bottom-nav span {
+                display: block;
+                font-size: 12px;
+            }
+    </style>
+</head>
+<body>
+    <form method="post" action="./market.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODIwMjQ4MzU5D2QWAgIDD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIIFhBmD2QWAmYPFQY9aHR0cHM6Ly9hc3NldHMuY29pbmdlY2tvLmNvbS9jb2lucy9pbWFnZXMvMS9sYXJnZS9iaXRjb2luLnBuZw1CaXRjb2luIChCVEMpDUJpdGNvaW4gKEJUQykINzAzMjAuNTUPY2hhbmdlIHBvc2l0aXZlBDEuODVkAgEPZBYCZg8VBkBodHRwczovL2Fzc2V0cy5jb2luZ2Vja28uY29tL2NvaW5zL2ltYWdlcy8yNzkvbGFyZ2UvZXRoZXJldW0ucG5nDkV0aGVyZXVtIChFVEgpDkV0aGVyZXVtIChFVEgpBzM3NTAuMTAPY2hhbmdlIG5lZ2F0aXZlBS0wLjc0ZAICD2QWAmYPFQZDaHR0cHM6Ly9hc3NldHMuY29pbmdlY2tvLmNvbS9jb2lucy9pbWFnZXMvMzI1L2xhcmdlL1RldGhlci1sb2dvLnBuZw1UZXRoZXIgKFVTRFQpDVRldGhlciAoVVNEVCkEMS4wMA9jaGFuZ2UgcG9zaXRpdmUBMGQCAw9kFgJmDxUGRGh0dHBzOi8vYXNzZXRzLmNvaW5nZWNrby5jb20vY29pbnMvaW1hZ2VzLzgyNS9sYXJnZS9ibmItaWNvbjJfMngucG5nA0JOQgNCTkIGNTk1LjIwD2NoYW5nZSBwb3NpdGl2ZQQyLjE1ZAIED2QWAmYPFQY/aHR0cHM6Ly9hc3NldHMuY29pbmdlY2tvLmNvbS9jb2lucy9pbWFnZXMvNDEyOC9sYXJnZS9zb2xhbmEucG5nDFNvbGFuYSAoU09MKQxTb2xhbmEgKFNPTCkGMTYwLjcwD2NoYW5nZSBwb3NpdGl2ZQQ1LjI1ZAIFD2QWAmYPFQZLaHR0cHM6Ly9hc3NldHMuY29pbmdlY2tvLmNvbS9jb2lucy9pbWFnZXMvNDQvbGFyZ2UveHJwLXN5bWJvbC13aGl0ZS0xMjgucG5nA1hSUANYUlAEMC42NQ9jaGFuZ2UgbmVnYXRpdmUFLTAuNDhkAgYPZBYCZg8VBj5odHRwczovL2Fzc2V0cy5jb2luZ2Vja28uY29tL2NvaW5zL2ltYWdlcy81L2xhcmdlL2RvZ2Vjb2luLnBuZw9Eb2dlY29pbiAoRE9HRSkPRG9nZWNvaW4gKERPR0UpBTAuMDgzD2NoYW5nZSBwb3NpdGl2ZQQzLjE4ZAIHD2QWAmYPFQY/aHR0cHM6Ly9hc3NldHMuY29pbmdlY2tvLmNvbS9jb2lucy9pbWFnZXMvOTc1L2xhcmdlL2NhcmRhbm8ucG5nDUNhcmRhbm8gKEFEQSkNQ2FyZGFubyAoQURBKQQwLjQyD2NoYW5nZSBuZWdhdGl2ZQUtMS4xMmRkcvaJpp1KzdHIC6cm+CybP8kkEwv2UhPlPs8ejKAerOQ=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2D836385" />
+</div>
+        <div class="container-box">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <a href="dashboard.aspx" class="text-dark text-decoration-none">
+                    <i class="bx bx-arrow-back fs-4"></i>
+                </a>
+                <h5 class="fw-bold m-0 text-center flex-grow-1">Crypto Market</h5>
+                <span style="width: 24px;"></span> <!-- Placeholder for spacing -->
+            </div>
+
+            <!-- Market List -->
+            
+                    <div class="market-card">
+                        <div class="d-flex align-items-center">
+                            <img src='https://assets.coingecko.com/coins/images/1/large/bitcoin.png' alt='Bitcoin (BTC)' />
+                            <div>
+                                <div class="crypto-name">Bitcoin (BTC)</div>
+                                <div class="text-muted small">USDT <strong>70320.55</strong></div>
+                            </div>
+                        </div>
+                        <div class='change positive'>
+                            1.85%
+                        </div>
+                    </div>
+                
+                    <div class="market-card">
+                        <div class="d-flex align-items-center">
+                            <img src='https://assets.coingecko.com/coins/images/279/large/ethereum.png' alt='Ethereum (ETH)' />
+                            <div>
+                                <div class="crypto-name">Ethereum (ETH)</div>
+                                <div class="text-muted small">USDT <strong>3750.10</strong></div>
+                            </div>
+                        </div>
+                        <div class='change negative'>
+                            -0.74%
+                        </div>
+                    </div>
+                
+                    <div class="market-card">
+                        <div class="d-flex align-items-center">
+                            <img src='https://assets.coingecko.com/coins/images/325/large/Tether-logo.png' alt='Tether (USDT)' />
+                            <div>
+                                <div class="crypto-name">Tether (USDT)</div>
+                                <div class="text-muted small">USDT <strong>1.00</strong></div>
+                            </div>
+                        </div>
+                        <div class='change positive'>
+                            0%
+                        </div>
+                    </div>
+                
+                    <div class="market-card">
+                        <div class="d-flex align-items-center">
+                            <img src='https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png' alt='BNB' />
+                            <div>
+                                <div class="crypto-name">BNB</div>
+                                <div class="text-muted small">USDT <strong>595.20</strong></div>
+                            </div>
+                        </div>
+                        <div class='change positive'>
+                            2.15%
+                        </div>
+                    </div>
+                
+                    <div class="market-card">
+                        <div class="d-flex align-items-center">
+                            <img src='https://assets.coingecko.com/coins/images/4128/large/solana.png' alt='Solana (SOL)' />
+                            <div>
+                                <div class="crypto-name">Solana (SOL)</div>
+                                <div class="text-muted small">USDT <strong>160.70</strong></div>
+                            </div>
+                        </div>
+                        <div class='change positive'>
+                            5.25%
+                        </div>
+                    </div>
+                
+                    <div class="market-card">
+                        <div class="d-flex align-items-center">
+                            <img src='https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png' alt='XRP' />
+                            <div>
+                                <div class="crypto-name">XRP</div>
+                                <div class="text-muted small">USDT <strong>0.65</strong></div>
+                            </div>
+                        </div>
+                        <div class='change negative'>
+                            -0.48%
+                        </div>
+                    </div>
+                
+                    <div class="market-card">
+                        <div class="d-flex align-items-center">
+                            <img src='https://assets.coingecko.com/coins/images/5/large/dogecoin.png' alt='Dogecoin (DOGE)' />
+                            <div>
+                                <div class="crypto-name">Dogecoin (DOGE)</div>
+                                <div class="text-muted small">USDT <strong>0.083</strong></div>
+                            </div>
+                        </div>
+                        <div class='change positive'>
+                            3.18%
+                        </div>
+                    </div>
+                
+                    <div class="market-card">
+                        <div class="d-flex align-items-center">
+                            <img src='https://assets.coingecko.com/coins/images/975/large/cardano.png' alt='Cardano (ADA)' />
+                            <div>
+                                <div class="crypto-name">Cardano (ADA)</div>
+                                <div class="text-muted small">USDT <strong>0.42</strong></div>
+                            </div>
+                        </div>
+                        <div class='change negative'>
+                            -1.12%
+                        </div>
+                    </div>
+                
+        </div>
+        <a href="https://wa.me/15819000136?text=Hello%20Exnessdt%2C%20I%20need%20some%20help%20with%20my%20trading%20platform.%20Can%20you%20assist%20me%3F" style="background-color:#58c139;color:white;padding: 15px 17px;display: block;position: fixed;z-index: 999999;border-radius: 50px;right: 25px;bottom: 100px;"><i class="bx bxl-whatsapp" style="font-size:40px;"></i></a>
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="dashboard.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bxs-dashboard'></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="market.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-bar-chart'></i>
+                <span>Market</span>
+            </a>
+            <a href="exchange.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-transfer'></i>
+                <span>Exchange</span>
+            </a>
+            <a href="setting.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-menu'></i>
+                <span>Menu</span>
+            </a>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </form>
+</body>
+</html>
