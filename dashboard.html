@@ -1,0 +1,1386 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Exnessdt | Trusted USDT to INR Conversion Platform
+</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" /><link rel="manifest" href="manifest.json" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f9fc;
+            padding-bottom: 100px;
+        }
+
+        .container-custom {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px 16px;
+        }
+
+        .card-custom {
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .rounded-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .btn-pill {
+            border-radius: 30px;
+            font-weight: 600;
+            padding: 8px 20px;
+        }
+
+        .gradient-blue {
+            background: linear-gradient(to right, #eef3ff, #dceeff);
+        }
+
+        .gradient-lightblue {
+            background: linear-gradient(to right, #f0faff, #e1efff);
+        }
+
+        .gradient-purple {
+            background: linear-gradient(to right, #e4e1ff, #dfebff);
+        }
+
+        .gradient-yellow {
+            background: linear-gradient(to right, #fffce5, #fff2cc);
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 500px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+            .bottom-nav i {
+                font-size: 22px;
+            }
+
+            .bottom-nav span {
+                display: block;
+                font-size: 12px;
+            }
+
+        .text-green {
+            color: #27ae60;
+        }
+
+        .text-red {
+            color: #e74c3c;
+        }
+
+        .btn-download {
+            border-radius: 30px;
+            padding: 8px 16px;
+            font-weight: 600;
+        }
+
+        .fw-semibold {
+            font-size: 10px;
+            font-weight: normal;
+        }
+    </style>
+    <script>
+            let deferredPrompt;
+
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                document.getElementById('addToDesktopBtn').style.display = 'block';
+
+                document.getElementById('addToDesktopBtn').addEventListener('click', () => {
+                    deferredPrompt.prompt();
+                    deferredPrompt.userChoice.then((choiceResult) => {
+                        if (choiceResult.outcome === 'accepted') {
+                            console.log('User accepted the install prompt');
+                        } else {
+                            console.log('User dismissed the install prompt');
+                        }
+                        deferredPrompt = null;
+                    });
+                });
+            });
+
+            window.addEventListener('appinstalled', () => {
+                console.log('App successfully installed');
+                document.getElementById('addToDesktopBtn').style.display = 'none';
+            });
+    </script>
+</head>
+<body>
+    <form method="post" action="./dashboard.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc4MzQyNDM5Nw9kFgICAw9kFghmDxYCHgRUZXh0BQQwLjAwZAIBDxYCHwAFBDAuMDBkAgIPFgIfAAUEMC4wMGQCAw8WAh4LXyFJdGVtQ291bnQCARYCZg9kFgJmDxUCAEhXZWxjb21lIHRvIGV4bmVzc2R0LmNvbS4gUmVmZXIgeW91ciBmcmllbmRzIGFuZCBmYW1pbHkgdG8gZWFybiBtb3JlIHVzZHRkZMNf7+VMP2uR/8Xqoa9sQZR0TBOQUVQkThuX0LwMXdKn" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B543B226" />
+</div>
+
+        <div class="container-custom">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <img src="assets/logo-name.png" style="width:200px;border-radius:0px;" />
+                <i class='bx bx-bell bx-sm'></i>
+            </div>
+
+            <!-- Analytics Card -->
+            <!-- Analytics + Side Boxes -->
+            <div class="row g-2 mb-3">
+                <!-- Main Analytics Box (left side) -->
+                <div class="col-7">
+                    <div class="card-custom h-100" style="background: linear-gradient(114deg, #000, #2C6996); color: white;">
+                        <p class="m-0  small pb-2 text-warning">Available</p>
+                        <h1 class="fw-bold text-warning">$0.00</h1>
+                        <p class="m-0  small text-warning">Overall Impressions</p>
+
+                    </div>
+                </div>
+
+                <!-- Side Boxes (right side) -->
+                <div class="col-5 d-flex flex-column gap-2">
+                    <!-- Profile Interactions Box -->
+                    <div class="bg-white rounded-4 shadow-sm p-2">
+                        <div class="d-flex justify-content-between align-items-center px-2">
+                            <span class="fw-bold fs-5">$0.00</span>
+                            <span class="text-success fw-semibold">+2.6%</span>
+                        </div>
+                        <small class="text-muted d-block mt-1">Processing</small>
+                    </div>
+
+                    <!-- Search Appearances Box -->
+                    <div class="bg-white rounded-4 shadow-sm p-2 ">
+                        <div class="d-flex justify-content-between align-items-center px-2">
+                            <span class="fw-bold fs-5">$0.00</span>
+                            <span class="text-danger fw-semibold">-3.8%</span>
+                        </div>
+                        <small class="text-muted d-block mt-1">Total Buy</small>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- News Ticker -->
+<div class="news-ticker mb-3">
+    <div class="ticker-wrap">
+        <div class="ticker-content">
+            
+                    Welcome to exnessdt.com. Refer your friends and family to earn more usdt
+                    
+                
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .news-ticker {
+    background-color: #fff8e1;
+    border-radius: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 500;
+    color: #e67e22;
+    padding: 6px 0;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.ticker-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.ticker-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker-scroll 25s linear infinite;
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+</style>
+
+             <!-- Services Row -->
+            <div class="mb-3">
+                <div class="d-flex justify-content-between text-center">
+
+                    <!-- Deposit -->
+                    <a href="deposit-usdt.aspx" class="flex-fill text-decoration-none text-dark">
+                        <div class="bg-warning text-white rounded-2 p-2 shadow-sm mx-1">
+                            <i class='bx bx-wallet fs-4 mb-1 d-block'></i>
+                            <small class="d-block fw-semibold">Deposit</small>
+                        </div>
+                    </a>
+
+                    <!-- Withdraw -->
+                    <a href="withdrawal-now.aspx" class="flex-fill text-decoration-none text-dark">
+                        <div class="bg-warning text-white rounded-2 p-2 shadow-sm mx-1">
+                            <i class='bx bx-download fs-4 mb-1 d-block'></i>
+                            <small class="d-block fw-semibold">Withdraw</small>
+                        </div>
+                    </a>
+
+                    <!-- Bank Card -->
+                    <a href="bank-card.aspx" class="flex-fill text-decoration-none text-dark">
+                        <div class="bg-warning text-white rounded-2 p-2 shadow-sm mx-1">
+                            <i class='bx bx-credit-card fs-4 mb-1 d-block'></i>
+                            <small class="d-block fw-semibold">Bank Card</small>
+                        </div>
+                    </a>
+
+                    <!-- Education -->
+                    <a href="exnessdt.pdf" class="flex-fill text-decoration-none text-dark">
+                        <div class="bg-warning text-white rounded-2 p-2 shadow-sm mx-1">
+                            <i class='bx bx-book-open fs-4 mb-1 d-block'></i>
+                            <small class="d-block fw-semibold">Education</small>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- Recent Transactions -->
+            <!-- Recent Transactions -->
+            <div class="card-custom mb-3">
+                <h6 class="fw-bold mb-3">Recent User Activities</h6>
+                <div class="scroll-container">
+                    <ul class="scroll-content list-unstyled">
+
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">10:44 AM</small><br />
+                                <span class="fw-semibold">
+                                    99*****569
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$255
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">11:45 AM</small><br />
+                                <span class="fw-semibold">
+                                    97*****262
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$488
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:15 PM</small><br />
+                                <span class="fw-semibold">
+                                    92*****541
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$217
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:13 PM</small><br />
+                                <span class="fw-semibold">
+                                    94*****574
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$101
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:01 PM</small><br />
+                                <span class="fw-semibold">
+                                    97*****296
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$416
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:31 PM</small><br />
+                                <span class="fw-semibold">
+                                    99*****016
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$678
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:44 PM</small><br />
+                                <span class="fw-semibold">
+                                    97*****381
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$953
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:54 PM</small><br />
+                                <span class="fw-semibold">
+                                    95*****887
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$393
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">11:18 AM</small><br />
+                                <span class="fw-semibold">
+                                    94*****651
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$964
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:42 PM</small><br />
+                                <span class="fw-semibold">
+                                    93*****653
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$942
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:34 PM</small><br />
+                                <span class="fw-semibold">
+                                    99*****829
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$659
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:48 PM</small><br />
+                                <span class="fw-semibold">
+                                    93*****221
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$198
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:16 PM</small><br />
+                                <span class="fw-semibold">
+                                    96*****117
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$332
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:57 PM</small><br />
+                                <span class="fw-semibold">
+                                    91*****189
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$168
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">11:25 AM</small><br />
+                                <span class="fw-semibold">
+                                    92*****391
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$423
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">11:29 AM</small><br />
+                                <span class="fw-semibold">
+                                    91*****009
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$661
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:21 PM</small><br />
+                                <span class="fw-semibold">
+                                    92*****369
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$907
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">11:38 AM</small><br />
+                                <span class="fw-semibold">
+                                    95*****226
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$209
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:41 PM</small><br />
+                                <span class="fw-semibold">
+                                    95*****553
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$888
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:34 PM</small><br />
+                                <span class="fw-semibold">
+                                    91*****872
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$681
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:30 PM</small><br />
+                                <span class="fw-semibold">
+                                    99*****182
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$372
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:24 PM</small><br />
+                                <span class="fw-semibold">
+                                    97*****628
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$840
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">11:09 AM</small><br />
+                                <span class="fw-semibold">
+                                    96*****039
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$352
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:53 PM</small><br />
+                                <span class="fw-semibold">
+                                    97*****566
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$174
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:17 PM</small><br />
+                                <span class="fw-semibold">
+                                    94*****294
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$810
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:23 PM</small><br />
+                                <span class="fw-semibold">
+                                    93*****024
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$620
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:27 PM</small><br />
+                                <span class="fw-semibold">
+                                    94*****028
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$970
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:40 PM</small><br />
+                                <span class="fw-semibold">
+                                    94*****283
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$14
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:08 PM</small><br />
+                                <span class="fw-semibold">
+                                    96*****172
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$626
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:46 PM</small><br />
+                                <span class="fw-semibold">
+                                    99*****539
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$64
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:44 PM</small><br />
+                                <span class="fw-semibold">
+                                    97*****144
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$688
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:54 PM</small><br />
+                                <span class="fw-semibold">
+                                    96*****090
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$130
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:56 PM</small><br />
+                                <span class="fw-semibold">
+                                    96*****753
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$430
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:45 PM</small><br />
+                                <span class="fw-semibold">
+                                    95*****579
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$439
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">11:51 AM</small><br />
+                                <span class="fw-semibold">
+                                    97*****364
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$343
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:15 PM</small><br />
+                                <span class="fw-semibold">
+                                    91*****713
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$55
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:39 PM</small><br />
+                                <span class="fw-semibold">
+                                    92*****802
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$71
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">01:28 PM</small><br />
+                                <span class="fw-semibold">
+                                    93*****534
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$681
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:12 PM</small><br />
+                                <span class="fw-semibold">
+                                    97*****835
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$886
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:09 PM</small><br />
+                                <span class="fw-semibold">
+                                    98*****766
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$521
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">03:15 PM</small><br />
+                                <span class="fw-semibold">
+                                    99*****431
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$477
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:40 PM</small><br />
+                                <span class="fw-semibold">
+                                    91*****879
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$903
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:24 PM</small><br />
+                                <span class="fw-semibold">
+                                    94*****495
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$538
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:10 PM</small><br />
+                                <span class="fw-semibold">
+                                    93*****769
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-success">
+                                    +$405
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-success">Deposit</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:38 PM</small><br />
+                                <span class="fw-semibold">
+                                    99*****694
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$162
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">10:55 AM</small><br />
+                                <span class="fw-semibold">
+                                    98*****396
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$844
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:24 PM</small><br />
+                                <span class="fw-semibold">
+                                    91*****794
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$530
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:18 PM</small><br />
+                                <span class="fw-semibold">
+                                    97*****223
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$611
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">12:20 PM</small><br />
+                                <span class="fw-semibold">
+                                    95*****552
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$572
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Exchange</small>
+
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item d-flex justify-content-between align-items-center w-100">
+                            <div>
+                                <small class="text-muted">02:03 PM</small><br />
+                                <span class="fw-semibold">
+                                    94*****698
+                                </span>
+
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-danger">
+                                    -$729
+                                </span>
+                                <br />
+                                <small class="fw-semibold text-danger">Withdrawal</small>
+
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <style type="text/css">
+                .scroll-container {
+                    height: 300px;
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%; /* Ensures full width */
+                }
+
+                .scroll-content {
+                    display: inline-block;
+                    animation: scrollUp 100s linear infinite; /* Slower scroll (60 seconds) */
+                    width: 100%;
+                }
+
+                    .scroll-content li {
+                        border-bottom: 1px solid #e0e0e0;
+                        padding: 10px 0;
+                    }
+
+                @keyframes scrollUp {
+                    0% {
+                        transform: translateY(0);
+                    }
+
+                    100% {
+                        transform: translateY(-100%);
+                    }
+                }
+           .carousel-item img {
+  /*height: 200px;*/
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+            </style>
+
+            <!-- Quick Actions -->
+           
+
+
+           
+
+            <!-- Section: Support -->
+            <div class="card-custom border-start border-4 border-warning gradient-blue">
+                <p class="fw-semibold text-dark mb-1">We’re Here for You</p>
+                <p class="small">Support hours: 9:00 AM - 11:00 PM</p>
+                <a href="https://wa.me/15819000136?text=Hello%20Exnessdt%2C%20I%20need%20some%20help%20with%20my%20trading%20platform.%20Can%20you%20assist%20me%3F" class="btn btn-outline-warning btn-sm btn-pill"><i class='bx bx-message-dots'></i>&nbsp;Chat with Support</a>
+                
+                
+            </div>
+
+           
+
+            <!-- Download App -->
+            <div class="text-center mt-3" style="position: fixed; bottom: 75px; width: 90%; max-width: 500px; margin: 0px auto;display:flex;justify-content:center">
+                <button type="button" id="addToDesktopBtn" class="btn btn-warning btn-download" style="display: none;"><i class='bx bx-download'></i> Download Our App</button>
+            </div>
+
+            
+
+            <div class="card-custom border-start border-4 border-info gradient-lightblue">
+                <p class="fw-semibold text-dark mb-1">Invite Friends</p>
+                <p class="small">Invite and earn together. Win bonus rewards!</p>
+                <a href="refer.aspx" class="btn btn-outline-info btn-sm btn-pill"><i class='bx bx-share-alt'></i>&nbsp;Invite Now</a>
+            </div>
+            
+
+
+
+
+            <div id="promoCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="6"></button>
+    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="7"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner rounded-4 shadow-sm">
+    <div class="carousel-item active">
+      <img src="assets/slider/slide1.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h6 class="fw-bold">Fast & Secure Transactions</h6>
+        <p>Convert USDT to INR instantly and safely.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/slider/slide2.jpg" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h6 class="fw-bold">Earn Daily Rewards</h6>
+        <p>Get up to ₹2000+ per day with smart trading.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/slider/slide3.jpg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h6 class="fw-bold">Trusted by 100K+ Users</h6>
+        <p>Join a growing community of successful earners.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/slider/slide4.jpg" class="d-block w-100" alt="Slide 4">
+      <div class="carousel-caption d-none d-md-block">
+        <h6 class="fw-bold">Instant Withdrawals</h6>
+        <p>Withdraw INR directly to your bank within minutes.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/slider/slide5.jpg" class="d-block w-100" alt="Slide 5">
+      <div class="carousel-caption d-none d-md-block">
+        <h6 class="fw-bold">24/7 Support</h6>
+        <p>Our expert team is always ready to assist you.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/slider/slide6.jpg" class="d-block w-100" alt="Slide 6">
+      <div class="carousel-caption d-none d-md-block">
+        <h6 class="fw-bold">Seamless Experience</h6>
+        <p>Enjoy a smooth and user-friendly interface.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/slider/slide7.jpg" class="d-block w-100" alt="Slide 7">
+      <div class="carousel-caption d-none d-md-block">
+        <h6 class="fw-bold">Referral Rewards</h6>
+        <p>Invite friends and earn commissions daily.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/slider/slide8.jpg" class="d-block w-100" alt="Slide 8">
+      <div class="carousel-caption d-none d-md-block">
+        <h6 class="fw-bold">Your Trusted USDT Partner</h6>
+        <p>Experience secure and transparent transactions.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+        <a href="https://wa.me/15819000136?text=Hello%20Exnessdt%2C%20I%20need%20some%20help%20with%20my%20trading%20platform.%20Can%20you%20assist%20me%3F" style="background-color:#58c139;color:white;padding: 15px 17px;display: block;position: fixed;z-index: 999999;border-radius: 50px;right: 25px;bottom: 100px;"><i class="bx bxl-whatsapp" style="font-size:40px;"></i></a>
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="dashboard.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bxs-dashboard'></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="market.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-bar-chart'></i>
+                <span>Market</span>
+            </a>
+            <a href="exchange.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-transfer'></i>
+                <span>Exchange</span>
+            </a>
+            <a href="setting.aspx" class="text-center text-decoration-none text-dark">
+                <i class='bx bx-menu'></i>
+                <span>Menu</span>
+            </a>
+        </div>
+
+        <!-- Bootstrap Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </form>
+</body>
+</html>
